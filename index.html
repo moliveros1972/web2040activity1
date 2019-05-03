@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Activity1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style type="text/css">
+
+	/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.rollover:hover .rollover-main {
+max-height: 0px !important; }
+.rollover:hover div img {
+max-height: none !important; }"
+
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+	
+</style>
+
+</head>
+
+<body>
+
+<tr>
+<td>
+<a class=”rollover” href=”http://nike.com">
+<img class=”rollover-main” src=”watch3.jpeg” width=”400" style=”display:block;width:100%;” alt=”Input alt” border=”0">
+<div style=”mso-hide:all;”><img src=”watch2.jpeg” style=”max-height:0px;display:block;width:100%;” width=”400" alt=”Input alt” border=”0"></div>
+</a>
+</td>
+</tr>
+	
+<tr>
+ <td style=“font-size: 12px; font-family: Arial, sans-serif; color: #666666;”>
+   <span>G-SHOCK  </span>
+   <br>
+   <span>$39.99</span>
+   <br>
+<span>Casio G271 G-Shock Analog-Digital Watch - For Men - Buy Casio G271 G-Shock Analog-Digital Watch - For Men G271 Online at Best Prices in India | Flipkart.com</span>
+
+ </td>
+</tr>
+
+<tr>
+<td>
+<img src="watch3.jpeg" alt="watch">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="watch3.jpeg" alt="watch" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Watch</h2>
+      <p>What an amazing Watch</p>
+    </div>
+  </div>
+</div>
+</td>
+</tr>
+
+<tr>
+	<td>
+		
+	</td>
+</tr>
+
+</body>
+
+</html>
